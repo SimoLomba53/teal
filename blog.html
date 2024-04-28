@@ -1,251 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Codegrid" />
-    <title>Blog | Vertex | MWT - Nov 2023 | @Codegrid</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/blog.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-logo">
-          <a href="index.html"><i class="ph-fill ph-circle-half"></i> Vertex</a>
-        </div>
-        <div class="navbar-items">
-          <input type="checkbox" id="hamburger-toggle" />
-          <label for="hamburger-toggle" class="hamburger-icon">
-            <i class="ph-light ph-list"></i>
-          </label>
-          <ul class="navbar-links">
-            <li class="navbar-item"><a href="./pricing.html">Pricing</a></li>
-            <li class="navbar-item"><a href="./company.html">Company</a></li>
-            <li class="navbar-item"><a href="./blog.html">Blog</a></li>
-            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
-            <li>
-              <div class="btn">
-                <a href="https://www.youtube.com/@codegrid">Subscribe</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UpConstruction Bootstrap Template - Blog</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.3.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>UpConstruction<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Blog</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Blog</li>
+        </ol>
+
       </div>
-    </nav>
+    </div><!-- End Breadcrumbs -->
 
-    <div class="wrapper">
-      <div class="radial-gradient"></div>
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="page-content blog-page">
-        <section class="hero">
-          <div class="container">
-            <div class="hero-header">
-              <h1>Blog</h1>
-              <div class="toggle-icons">
-                <p>Filter categories</p>
-                <p>/</p>
-                <a><i class="ph-fill ph-share-network"></i></a>
-                <a><i class="ph-fill ph-heart"></i> </a>
-                <a><i class="ph-fill ph-facebook-logo"></i> </a>
+        <div class="row gy-4 posts-list">
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                <span class="post-date">December 12</span>
               </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                  </div>
+                </div>
+
+                <p>
+                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et
+                  laboriosam eius aut nostrum quidem aliquid dicta.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+
             </div>
-          </div>
-        </section>
+          </div><!-- End post list item -->
 
-        <section class="contact-cards">
-          <div class="container">
-            <div class="contact-card">
-              <div class="blog-img">
-                <img src="./assets/blog-1.jpg" alt="" />
-              </div>
-              <p>Planning for unplanned work</p>
-              <span>
-                Connect with our sales representatives for detailed information
-                on our products, services, special contracts.
-              </span>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
 
-              <div class="hero-callout">
-                <a href="#">Read</a>
-                <i class="ph ph-caret-right"></i>
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+                <span class="post-date">March 19</span>
               </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Nisi magni odit consequatur autem nulla dolorem</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+                  </div>
+                </div>
+
+                <p>
+                  Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo
+                  libero rerum voluptatem pariatur nam.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+
             </div>
+          </div><!-- End post list item -->
 
-            <div class="contact-card">
-              <div class="blog-img">
-                <img src="./assets/blog-2.jpg" alt="" />
-              </div>
-              <p>How we run projects at Vertex</p>
-              <span>
-                Contact our support team for assistance with our services,
-                troubleshooting, or to get answers to questions.
-              </span>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
 
-              <div class="hero-callout">
-                <a href="#">Read</a>
-                <i class="ph ph-caret-right"></i>
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+                <span class="post-date">June 24</span>
               </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
+                  </div>
+                </div>
+
+                <p>
+                  Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis
+                  et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+
             </div>
-          </div>
-        </section>
+          </div><!-- End post list item -->
 
-        <section class="news">
-          <div class="container">
-            <h3>More news</h3>
-          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
 
-          <div class="container news-items">
-            <div class="news-item">
-              <div class="news-name">
-                <p>Welcoming Cristina Cordova to Vertex</p>
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
+                <span class="post-date">August 05</span>
               </div>
-              <div class="news-info">
-                <p>News</p>
-                <p>May 23, 2023</p>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius
+                  exercitationem.</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
+                  </div>
+                </div>
+
+                <p>
+                  Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum
+                  enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
               </div>
+
             </div>
+          </div><!-- End post list item -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>How we built Project Updates</p>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
+                <span class="post-date">September 17</span>
               </div>
-              <div class="news-info">
-                <p>Craft</p>
-                <p>August 02, 2023</p>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Accusamus quaerat aliquam qui debitis facilis consequatur</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">John Parker</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
+                  </div>
+                </div>
+
+                <p>
+                  In itaque assumenda aliquam voluptatem qui temporibus iusto nisi quia. Autem vitae quas aperiam
+                  nesciunt mollitia tempora odio omnis. Ipsa odit sit ut amet necessitatibus. Quo ullam ut corrupti
+                  autem consequuntur totam dolorem.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
               </div>
+
             </div>
+          </div><!-- End post list item -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Settings are not a design failure</p>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
+                <span class="post-date">December 07</span>
               </div>
-              <div class="news-info">
-                <p>Company Building</p>
-                <p>June 16, 2022</p>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Julia White</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
+                  </div>
+                </div>
+
+                <p>
+                  Expedita et temporibus eligendi enim molestiae est architecto praesentium dolores. Illo laboriosam
+                  officiis quis. Labore officia quia sit voluptatem nisi est dignissimos totam. Et voluptate et
+                  consectetur voluptatem id dolor magni impedit. Omnis dolores sit.
+                </p>
+
+                <hr>
+
+                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                    class="bi bi-arrow-right"></i></a>
+
               </div>
+
             </div>
+          </div><!-- End post list item -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Introducing the New Collaboration Tool Features</p>
-              </div>
-              <div class="news-info">
-                <p>Product Launch</p>
-                <p>July 10, 2023</p>
-              </div>
-            </div>
+        </div><!-- End blog posts list -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Behind the Scenes: Our Remote Work Culture</p>
-              </div>
-              <div class="news-info">
-                <p>Inside the Company</p>
-                <p>April 15, 2023</p>
-              </div>
-            </div>
+        <div class="blog-pagination">
+          <ul class="justify-content-center">
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div><!-- End blog pagination -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Vertex Secures Funding for Expansion</p>
-              </div>
-              <div class="news-info">
-                <p>Company News</p>
-                <p>March 22, 2023</p>
-              </div>
-            </div>
+      </div>
+    </section><!-- End Blog Section -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Empowering Teams with Vertex: A User Story</p>
-              </div>
-              <div class="news-info">
-                <p>User Experience</p>
-                <p>October 05, 2023</p>
-              </div>
-            </div>
+  </main><!-- End #main -->
 
-            <div class="news-item">
-              <div class="news-name">
-                <p>Upcoming Features in Next Major Update</p>
-              </div>
-              <div class="news-info">
-                <p>Development</p>
-                <p>September 18, 2023</p>
-              </div>
-            </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
 
-            <div class="news-item no-border">
-              <div class="news-name">
-                <p>Our Commitment to Sustainability in Tech</p>
-              </div>
-              <div class="news-info">
-                <p>Corporate</p>
-                <p>February 28, 2023</p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
 
-        <div class="divider"></div>
-
-        <footer>
-          <div class="container">
-            <div class="footer-brand">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>UpConstruction</h3>
               <p>
-                <i class="ph-fill ph-circle-half"></i> Vertex - Designed
-                Worldwide
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
               </p>
-              <div class="socials">
-                <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
-                <a href="#"><i class="ph-fill ph-github-logo"></i></a>
-                <a href="#"><i class="ph-fill ph-slack-logo"></i></a>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-            <div class="footer-links">
-              <div class="footer-col">
-                <p>Product</p>
-                <p><a href="#">Features</a></p>
-                <p><a href="#">Integrations</a></p>
-                <p><a href="#">Pricing</a></p>
-                <p><a href="#">Changelog</a></p>
-                <p><a href="#">Docs</a></p>
-                <p><a href="#">Vertex Method</a></p>
-                <p><a href="#">Download</a></p>
-              </div>
-              <div class="footer-col">
-                <p>Company</p>
-                <p><a href="#">About us</a></p>
-                <p><a href="#">Blog</a></p>
-                <p><a href="#">Careers</a></p>
-                <p><a href="#">Customers</a></p>
-                <p><a href="#">Brand</a></p>
-              </div>
-              <div class="footer-col">
-                <p>Resources</p>
-                <p><a href="#">Community</a></p>
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">DPA</a></p>
-                <p><a href="#">Privacy Policy</a></p>
-                <p><a href="#">Terms of service</a></p>
-                <p><a href="#">Report</a></p>
-              </div>
-              <div class="footer-col">
-                <p>Developers</p>
-                <p><a href="#">API</a></p>
-                <p><a href="#">Status</a></p>
-                <p><a href="#">Github</a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
+          </div><!-- End footer info column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+        </div>
       </div>
     </div>
-  </body>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+            href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
